@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda Contactos</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda Telefónica</h1>
+    </header>
+    <div class="container">
+        <div class="task-add">
+            <h3>Agregar contactos</h3>
+            <form class="add" id="form-add">
+                <input type="text" id="name" placeholder="Nombre">
+                <input type="number" id="tel" placeholder="Teléfono">
+                <button type="button"  onclick="add()">Agregar</button>
+            </form>
+           
+        </div>
+         <div class="find">
+                <h3>Buscar contacto</h3>
+                <input oninput="find()" type="text" id="find-user" placeholder="Buscar">
+            </div>
+            <div class="result">
+                <ul>
+                    <div id="result"></div>
+                </ul>
+            </div>
+        
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>

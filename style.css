@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f7fa;
+    min-height: 100vh;
+    margin: 0;
+}
+header {
+    background-color: #00796b;
+    margin-top: 0px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+h1 {
+    justify-self: center;
+    padding-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center
+}
+.task-add {
+    margin: 0;
+    display: flex;
+    max-width: 500px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    border-radius: 10px;
+    border: 2px solid #b2dfdb;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.task-add h3 {
+    justify-self: center;
+    font-weight: bold;
+    text-align: center;
+    color: #00796b;
+}
+.add {
+    margin: 20px;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 0px;
+}
+.add input {
+    width: 420px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+}
+.add button {
+    width: 420px;
+    padding: 10px;
+    background-color: #00796b;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+.add button:hover {
+    background-color: #004d40;
+}
+.find {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 20px;
+    height: 110px;
+    border-radius: 10px;
+    width: auto;
+    background-color: white;
+    border: 2px solid #b2dfdb;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.find h3 {
+    justify-self: center;
+    font-weight: bold;
+    text-align: center;
+    color: #00796b;
+}
+.find input {
+    width: 420px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: auto;
+    background-color: white;
+    border: 2px solid #b2dfdb;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.result ul {
+    list-style-type: none;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    padding-left: 0;
+}
+.result li {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.result li .contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.result .modify {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.result button.modify-btn {
+    background: #ffb300;
+}
+.result .modify input {
+   width: 36%;
+    margin: 0  5px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+}
+.result .add-modify {
+    margin-right: 13px;
+    margin-top: 10px;
+    background: #00796b;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.result .add-modify:hover {
+    background-color: #004d40;
+}
+.result .eliminar {
+    display: flex;
+    flex-direction: column;
+}
+.result .list-btn {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+}
+.result li .contact-info span {
+    flex: 1;
+    padding: 5px;
+    display: block;
+    margin: 0 10px;
+    background: whitesmoke;
+}
+.result button {
+    background-color: #d32f2f;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    margin: auto;
+    cursor: pointer;
+    width: 205px;
+    transition: background-color 0.3s;
+}
+.result button:hover {
+    background-color: #b71c1c;
+}
+.result .modify-btn:hover {
+    background-color: #ff8f00;
+}
+.result li span {
+    background: whitesmoke;
+}
