@@ -1,27 +1,38 @@
+/* Estilo general para todos los elementos */
 * {
     box-sizing: border-box;
 }
+
+/* Estilo del cuerpo del documento */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e0f7fa;
     min-height: 100vh;
     margin: 0;
 }
+
+/* Estilo del encabezado */
 header {
     background-color: #00796b;
     margin-top: 0px;
     color: #ffffff;
     padding-top: 10px;
 }
+
+/* Estilo para los títulos h1 */
 h1 {
     justify-self: center;
     padding-bottom: 20px;
 }
+
+/* Contenedor principal que engloba todo el contenido */
 .container {
     display: flex;
     flex-direction: column;
-    justify-self: center
+    justify-self: center;
 }
+
+/* Sección para agregar nuevos contactos */
 .task-add {
     margin: 0;
     display: flex;
@@ -35,12 +46,16 @@ h1 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
+
+/* Estilo para el título dentro de la sección de agregar contactos */
 .task-add h3 {
     justify-self: center;
     font-weight: bold;
     text-align: center;
     color: #00796b;
 }
+
+/* Formulario para introducir nuevos contactos */
 .add {
     margin: 20px;
     max-width: 500px;
@@ -51,6 +66,20 @@ h1 {
     justify-items: center;
     margin-top: 0px;
 }
+
+/* Eliminar flechas de incremento/decremento para inputs de tipo número */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Estilo para los campos de entrada dentro de la sección de agregar */
 .add input {
     width: 420px;
     margin-bottom: 10px;
@@ -58,6 +87,8 @@ h1 {
     border: 1px solid #b2dfdb;
     border-radius: 5px;
 }
+
+/* Estilo para los botones dentro de la sección de agregar */
 .add button {
     width: 420px;
     padding: 10px;
@@ -68,9 +99,13 @@ h1 {
     border: none;
     transition: background-color 0.3s;
 }
+
+/* Cambio de color al pasar el cursor sobre el botón */
 .add button:hover {
     background-color: #004d40;
 }
+
+/* Sección para buscar contactos existentes */
 .find {
     display: flex;
     flex-direction: column;
@@ -84,12 +119,16 @@ h1 {
     border: 2px solid #b2dfdb;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilo para el título dentro de la sección de búsqueda */
 .find h3 {
     justify-self: center;
     font-weight: bold;
     text-align: center;
     color: #00796b;
 }
+
+/* Estilo para los campos de entrada dentro de la sección de búsqueda */
 .find input {
     width: 420px;
     margin-bottom: 10px;
@@ -101,6 +140,8 @@ h1 {
     border: 1px solid #b2dfdb;
     border-radius: 5px;
 }
+
+/* Sección para mostrar los resultados de búsqueda o lista de contactos */
 .result {
     display: flex;
     flex-direction: column;
@@ -112,6 +153,8 @@ h1 {
     border: 2px solid #b2dfdb;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Lista dentro de la sección de resultados */
 .result ul {
     list-style-type: none;
     width: 460px;
@@ -122,6 +165,8 @@ h1 {
     justify-self: center;
     padding-left: 0;
 }
+
+/* Elementos li dentro de la sección de resultados */
 .result li {
     margin: 10px;
     display: flex;
@@ -129,29 +174,41 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+/* Información de contacto dentro de los resultados */
 .result li .contact-info {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
+
+/* Sección de modificación en los resultados */
 .result .modify {
     width: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Botones de modificación dentro de los resultados */
 .result button.modify-btn {
     background: #ffb300;
 }
+
+/* Campos de entrada en la sección de modificación de resultados */
 .result .modify input {
-   width: 36%;
-    margin: 0  5px;
+    width: 36%;
+    margin: 0 5px;
     border: 1px solid #b2dfdb;
     border-radius: 5px;
+    padding: 5px;
 }
+
+/* Botones de agregar/modificar dentro de los resultados */
 .result .add-modify {
-    margin-right: 13px;
-    margin-top: 10px;
+    margin: 10px 10px 0px 10px;
     background: #00796b;
     width: 100%;
     color: #ffffff;
@@ -160,25 +217,36 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+/* Botones de agregar/modificar en estado hover */
 .result .add-modify:hover {
     background-color: #004d40;
 }
+
+/* Sección de eliminar dentro de los resultados */
 .result .eliminar {
     display: flex;
     flex-direction: column;
 }
+
+/* Botones de la lista dentro de los resultados */
 .result .list-btn {
     display: flex;
     flex-direction: row;
     margin: 0px 10px;
 }
+
+/* Spans dentro de la información de contacto en los resultados */
 .result li .contact-info span {
     flex: 1;
     padding: 5px;
     display: block;
     margin: 0 10px;
     background: whitesmoke;
+    border-radius: 5px;
 }
+
+/* Botones dentro de la sección de resultados */
 .result button {
     background-color: #d32f2f;
     border-radius: 5px;
@@ -190,12 +258,18 @@ h1 {
     width: 205px;
     transition: background-color 0.3s;
 }
+
+/* Botones en estado hover dentro de la sección de resultados */
 .result button:hover {
     background-color: #b71c1c;
 }
+
+/* Botones de modificación en estado hover dentro de los resultados */
 .result .modify-btn:hover {
     background-color: #ff8f00;
 }
+
+/* Spans dentro de los elementos li en la sección de resultados */
 .result li span {
     background: whitesmoke;
 }

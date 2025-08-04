@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css"><!-- Título de la página que aparece en la pestaña del navegador -->
     <title>Agenda Contactos</title>
 </head>
 <body>
-    <header>
+    <!-- Encabezado de la página -->
+    <header>       
         <h1>Agenda Telefónica</h1>
     </header>
+    <!-- Contenedor principal que engloba todo el contenido -->
     <div class="container">
+        <!-- Sección para agregar nuevos contactos -->
         <div class="task-add">
-            <h3>Agregar contactos</h3>
-            <form class="add" id="form-add">
-                <input type="text" id="name" placeholder="Nombre">
-                <input type="number" id="tel" placeholder="Teléfono">
-                <button type="button"  onclick="add()">Agregar</button>
-            </form>
-           
-        </div>
-         <div class="find">
-                <h3>Buscar contacto</h3>
-                <input oninput="find()" type="text" id="find-user" placeholder="Buscar">
-            </div>
-            <div class="result">
-                <ul>
-                    <div id="result"></div>
-                </ul>
-            </div>
         
+            <h3>Agregar contactos</h3>
+            <!-- Formulario para introducir nuevos contactos -->
+            <form class="add" id="form-add">                
+                <input type="text" id="name" placeholder="Nombre">               
+                <input type="number" id="phone" placeholder="Teléfono">                
+                <button type="button" onclick="add()">Agregar</button>
+            </form>
+        </div>
+        <!-- Sección para buscar contactos existentes -->
+        <div class="find">
+            
+            <h3>Buscar contacto</h3>            
+            <input oninput="find()" type="text" id="find-user" placeholder="Buscar">
+        </div>
+        <!-- Sección para mostrar los resultados de búsqueda o lista de contactos -->
+        <div class="result">
+            <!-- Lista no ordenada para mostrar los resultados -->
+            <ul>
+                <!-- Contenedor para los resultados generados dinámicamente -->
+                <div id="result"></div>
+            </ul>
+        </div>
     </div>
-      <script src="script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
